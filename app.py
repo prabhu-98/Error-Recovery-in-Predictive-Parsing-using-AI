@@ -7,11 +7,7 @@ st.set_page_config(page_title="LL(1) Parser", layout="wide")
 st.title("LL(1) Parser with Interactive Parse Trees & Downloadable Reports")
 
 st.markdown("""
-This application analyzes Context-Free Grammar (CFG), removes left recursion, applies left factoring, computes First & Follow sets, generates parsing tables, and provides step-by-step LL(1) parsing explanations.  
-**New Features:**  
-✔️ **Interactive Parse Trees**  
-✔️ **Downloadable Reports (PDF)**
-""")
+This application analyzes Context-Free Grammar (CFG), removes left recursion, applies left factoring, computes First & Follow sets, generates parsing tables, and provides step-by-step LL(1) parsing explanations.""")
 
 grammar_input = st.text_area("Enter Grammar (each rule in a new line, e.g., `S -> A a | b`):", height=200)
 input_string = st.text_input("Enter input string for parsing:")
