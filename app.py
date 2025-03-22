@@ -4,7 +4,7 @@ from gemini_api import process_with_gemini
 
 st.set_page_config(page_title="LL(1) Parser", layout="wide")
 
-st.title("LL(1) Parser with Interactive Parse Trees & Downloadable Reports")
+st.title("LL(1) Parser with Interactive Parse Trees using AI")
 
 st.markdown("""
 This application analyzes Context-Free Grammar (CFG), removes left recursion, applies left factoring, computes First & Follow sets, generates parsing tables, and provides step-by-step LL(1) parsing explanations.""")
