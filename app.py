@@ -2,7 +2,7 @@ import streamlit as st
 from gemini_api import process_with_gemini
 
 st.set_page_config(page_title="LL(1) Parser", layout="wide")
- Create two columns: one for the image and one for the title
+#Create two columns: one for the image and one for the title
 col1, col2 = st.columns([5,7])  # You can adjust the proportions as needed
 
 # Add the logo image in the first column
