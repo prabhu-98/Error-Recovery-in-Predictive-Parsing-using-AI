@@ -12,7 +12,7 @@ genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel("gemini-2.0-pro-exp-02-05")
 
 def process_with_gemini(grammar, input_string):
-    prompt = f"""
+   prompt = f"""
     I need a complete step-by-step analysis of a grammar and parsing of an input string. Please maintain consistent formatting throughout your response and provide ALL requested outputs.
 
     ## INPUT DATA:
@@ -49,7 +49,7 @@ def process_with_gemini(grammar, input_string):
     - Use ASCII art for clear visualization with proper indentation and structure
     - Format it so it can be easily converted to an image
 
-    6. Step-by-Step Parsing Process
+    6.Step-by-Step Parsing Process
     - Show EACH step of the parsing process using the LL(1) parsing table
     - For each step include:
     * Current stack contents
@@ -58,6 +58,12 @@ def process_with_gemini(grammar, input_string):
     * Rule applied (if any)
     - Provide clear explanations for each parsing decision
     - Indicate whether the string is accepted or rejected by the grammar
+
+    7.Error Recovery and Exception Handling
+    -Error Encountered
+    - Panic Mode Recovery
+    - Phrase-Level Recovery
+    - Error Productions
 
     VALIDATION AND CONCLUSION
     - Confirm whether the input string is valid according to the grammar
