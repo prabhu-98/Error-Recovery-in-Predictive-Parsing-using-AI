@@ -12,7 +12,7 @@ genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel("gemini-2.0-pro-exp-02-05")
 
 def process_with_gemini(grammar, input_string):
-   prompt = f"""
+    prompt = f"""
     I need a complete step-by-step analysis of a grammar and parsing of an input string. Please maintain consistent formatting throughout your response and provide ALL requested outputs.
 
     ## INPUT DATA:
